@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/slideimage1"
+                        android:layout_width="390dp"
+                        android:layout_height="220dp"
+                        android:src="@drawable/slide_img1" />
+
+                    <ImageView
+                        android:id="@+id/slideimage2"
+                        android:layout_width="390dp"
+                        android:layout_height="220dp"
+                        android:src="@drawable/slide_img2" />
+
+                    <ImageView
+                        android:id="@+id/slideimage3"
+                        android:layout_width="390dp"
+                        android:layout_height="220dp"
+                        android:src="@drawable/slide_img3" />
+
+                    <ImageView
+                        android:id="@+id/slideimage4"
+                        android:layout_width="390dp"
+                        android:layout_height="220dp"
+                        android:src="@drawable/slide_img4" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+
+        <Button
+            android:id="@+id/mainbtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="secondCall"
+            android:textAlignment="center"
+            android:text="UPES Tabs"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.216" />
+
+        <Button
+            android:id="@+id/mainbtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="webCall"
+            android:textAlignment="center"
+            android:text="WEB Button"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.417" />
+
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:paddingLeft="10dp"
+          android:paddingRight="10dp"
+          android:src="@drawable/ai2"
+          />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ai9"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ai7"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ai1"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ai5"
+            />
+
+
+        <com.spark.submitbutton.SubmitButton
+            android:layout_width="360dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="25dp"
+            android:text="Done"
+            android:layout_marginLeft="100dp"
+            android:textColor="@color/gray"
+            app:sub_btn_background="@color/white"
+            app:sub_btn_duration="3000"
+            app:sub_btn_line_color="#a4c639"
+            app:sub_btn_ripple_color="#a4c639"
+            app:sub_btn_tick_color="@color/white" />
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
